@@ -16,7 +16,8 @@ main proc
      int 21h  
      
      sub al,48
-     mov n,al
+     mov n,al 
+     
      printn
      
      mov bl,1
@@ -29,7 +30,8 @@ main proc
      jmp top
      
      exit_loop:
-     
+      
+      printn "The sum is: "
       mov ah,2
       mov dl,sum
       int 21h
